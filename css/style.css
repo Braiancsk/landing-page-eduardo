@@ -1,0 +1,217 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+:root{
+    --bg-primary:#302E93;
+}
+
+header.header{
+    background: #212224;
+    border-radius: 0px 0px 0px 200px;
+    height: 520px;
+    position: relative;
+}
+header.header .container{
+    position: relative;
+    height:100%;
+}
+header.header ul li{
+    list-style-type: none;
+}
+
+header.header .row{
+    position: relative;
+    z-index: 9;
+}
+
+header.header ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    max-width: 100%;
+    height:100%;
+    border-radius: 0px 0px 0px 200px;
+}
+
+header.header h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color:white;
+}
+
+header.header p{
+    color:white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+header.header h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color:white;
+}
+header.header h3{
+    color:#F1DC4B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.hero__content{
+    height:177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__content:last-child p{
+    max-width: 170px;
+}
+.navbar-btn{
+    color:#302E93!important;
+    max-width:95px!important;
+    width: 100%!important;
+    padding: 8px;
+    display: block;
+    text-align: center;
+    background:white;
+    border-radius: 4px;
+}
+.max-w-link{
+    max-width:95px!important;
+    width: 100%!important;
+}
+.custom-btn{
+    font-size: 16px;
+    font-weight: 700;
+    color:white;
+    padding: 8px;
+    max-width: 208px;
+    width: 100%;
+    border:0;
+    text-align: center;
+    background: var(--bg-primary);
+    border-radius: 4px;
+    text-decoration:none;
+    transition:0.1s ease-in-out;
+}
+.custom-btn:hover{
+    background:#3735a7;
+    color:white;
+}
+
+.header__slide{
+    position:absolute;
+    bottom:-93px;
+    left:0;
+    width: 100%;
+    z-index: 9;
+}
+
+.header__slide h6{
+    color:#F1DC4B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.seta{
+    max-width:309px;
+    padding: 0 30px;
+}
+.seta img{
+    position:absolute;
+    top: -15;
+    right:0;
+}
+.header__slide .swiper-wrapper{
+    padding: 0 30px;
+}
+
+.header__slide .swiper-slide{
+    position: relative;
+    cursor:pointer;
+}
+
+.header__slide .swiper-slide h4{
+    position:absolute;
+    bottom:0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    max-width:147px;
+    width: 100%;
+    color:white;
+    padding: 14px;
+}
+.header__slide .swiper-slide h4 > b{
+    font-weight: 700;
+    font-size:18px;
+}
+.header__slide .swiper-slide img{
+    border-radius: 10px;
+    max-width:203px;
+    height:138px;
+    object-fit: cover;
+}
+.header__slide .swiper-slide-active{
+    max-width:203px;
+    width: 100%;
+}
+.header__slide .swiper-slide-active img{
+    position: relative;
+    height:173px;
+    max-width:203px;
+    width: 100%;
+
+}
+.foward{
+    position: relative;
+    z-index: 15;
+}
+.header__slide .swiper-slide-active:after{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    background: #302E93;
+    opacity: 0.7;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+}
+
+header.header .swiper-button-next, header.header .swiper-button-prev{
+    height:36px;
+    width: 36px;
+    background:#3243D6;
+    border-radius: 50%;
+}
+header.header .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 16px;
+    color:white;
+    font-weight: bold;
+}
+header.header .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    font-size: 16px;
+    color:white;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px){
+    header.header{
+        height: 700px;
+    }
+}
