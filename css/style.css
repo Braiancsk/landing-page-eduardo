@@ -210,6 +210,217 @@ header.header .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
     color:white;
     font-weight: bold;
 }
+
+section.patrocinadores{
+    padding-top:300px; 
+}
+
+section.patrocinadores h2{
+    color:#C5C5C5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section.patrocinadores .mySwiper{
+    overflow-x: hidden;
+    position: relative;
+    height:100px;
+    padding: 0 30px;
+}
+
+.patrocinador__img{
+    max-width:197px;
+    width: 100%;
+}
+
+section.patrocinadores .swiper-button-next, section.patrocinadores .swiper-button-prev{
+    height:36px;
+    width: 36px;
+    border-radius:50%;
+    background: #C5C5C5;
+}
+
+section.patrocinadores .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    font-size: 16px;
+    font-weight: 700;
+    color:white;
+}
+
+
+section.patrocinadores .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 16px;
+    font-weight: 700;
+    color:white;
+}
+section.calendario{
+    background: #EBEAED;
+    border-radius: 0px 150px 0px 0px;   
+    position: relative;
+    min-height: 468px;
+    overflow: hidden;
+    margin:40px 0;
+}
+section.calendario .container{
+    position: relative;
+    z-index: 9;
+}
+
+section.calendario .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    padding: 60px 7px 15px 7px;
+}
+section.calendario .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    font-size: 24px;
+    color:#B6B6B6;
+    font-weight: 700;
+}
+section.calendario .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background: #3243D6!important;
+    color:white!important;
+}
+section.calendario h2{
+    padding:20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    transform: rotate(-90deg);
+    color:#C7C7C7;
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    z-index: 0;
+}
+
+.custom-title{
+    padding:20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color:#C7C7C7;
+}
+section.calendario .nav{
+    gap:10px;
+}
+section.calendario .nav-item{
+    border-bottom: 4px solid #dadada;
+}
+section.calendario .line{
+    width: 100%;
+    background-color:#C7C7C7;
+    height:2px;
+    margin: 15px 0;
+}
+.calendario__mes h6{
+    color:#333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+.calendario__mes .form-select{
+    color:#3243D6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    max-width:135px;
+    background-color:transparent;
+    border:0;
+}
+
+.calendario__content:last-child{
+    padding-bottom: 50px!important;
+}
+
+.calendario__forma{
+    position: relative;
+}
+
+section.calendario .tab-pane{
+    max-width:751px;
+}
+.empty{
+    padding-top:80px;
+}
+.calendario__forma h4{
+    position:absolute;
+    top: 15px;
+    bottom:0;
+    right: 5px;
+    left:0;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:white;
+    max-width:30px;
+}
+.calendario__forma h4 > span{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.calendario__infos h6{
+    color:#212121;
+    font-size: 16px;
+    font-weight: 700;
+}
+.calendario__infos p{
+    color:#7A7A7A;
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+.calendario__infos span{
+    color:#F3603F;
+    font-weight: 700;
+    font-size: 14px;
+}
+.calendario__infos-btn{
+    color:#302E93;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    display:block;
+    padding: 8px;
+    max-width:102px;
+    width: 100%;
+    text-decoration: none;
+    background: #FFFFFF;
+    border: 1px solid #302E93;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.encerrada{
+    background-color:#DB3333;
+    border: 1px solid #DB3333;
+    color:white;
+    transition:0.1s ease-in-out;
+}
+.encerrada:hover{
+    color:white;
+    background-color:#ee3737;
+}
+.calendario__img{
+    min-height:100%;
+    object-fit: cover;
+    max-width:916px;
+    width: 100%;
+    position:absolute;
+    right: -100px;
+    top:0;
+    border-radius: 0px 150px 0px 0px;
+    z-index: 9;
+}
 @media screen and (max-width: 768px){
     header.header{
         height: 700px;
