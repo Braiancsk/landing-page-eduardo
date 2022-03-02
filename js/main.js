@@ -1,22 +1,32 @@
+
+  const gallery = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    watchSlidesProgress: true,
+    effect: "fade",
+  });
+
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: "auto",
     spaceBetween: 20,
     centeredSlides: false,
+
     slideToClickedSlide:true,
+
     breakpoints: {
       640: {
-        slidesPerView: 2,
+        slidesPerView: "auto",
         spaceBetween: 20,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: "auto",
         spaceBetween: 30,
       },
       1024: {
-        slidesPerView: 5,
+        slidesPerView: "auto",
         spaceBetween: 30,
       },
     },
@@ -26,8 +36,70 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
 
     },
+    thumbs: {
+      swiper: gallery,
+    },
+  });
+
+//funções responsaveis por mudar o background do topo
+  let torneio = document.querySelector('[data-torneio]')
+  let data = document.querySelector('[data-date]')
+  let bgImage = document.querySelector('[data-background]')
+
+  swiper.on('slideNextTransitionStart', function (e) {
+    let slides = [...swiper.$wrapperEl[0].children]
+    let slideActive = slides.find(active => active.className == 'swiper-slide swiper-slide-active');
+    let slideActiveRepater = slides.find(active => active.className == 'swiper-slide swiper-slide-duplicate-active');
+   
+    
+    if(slideActive != undefined){
+      torneio.textContent = slideActive.children[1].innerText
+      data.textContent = slideActive.children[2].innerText
+    }
+   
+    if(slideActiveRepater != undefined){
+      torneio.textContent = slideActiveRepater.children[1].innerText
+      data.textContent = slideActiveRepater.children[2].innerText
+    }
   
   });
+
+  swiper.on('slidePrevTransitionStart', function(){
+    let slides = [...swiper.$wrapperEl[0].children]
+    let slideActive = slides.find(active => active.className == 'swiper-slide swiper-slide-active');
+    let slideActiveRepater = slides.find(active => active.className == 'swiper-slide swiper-slide-duplicate-active');
+   
+
+    if(slideActive != undefined){
+      torneio.textContent = slideActive.children[1].innerText
+      data.textContent = slideActive.children[2].innerText
+    }
+   
+    if(slideActiveRepater != undefined){
+      torneio.textContent = slideActiveRepater.children[1].innerText
+      data.textContent = slideActiveRepater.children[2].innerText
+    }
+
+  })
+
+  //funções responsaveis por mudar o background do calendário
+  
+  const handleTab = (e) =>{
+    console.dir(e)
+  }
+
+  let kidTab = document.querySelectorAll('[data-kid-tab]')
+  let kidsImage = document.querySelector('[data-kid]')
+  kidTab.forEach(tab =>{
+    tab.addEventListener('click',()=>{
+      if(tab.innerText == 'Kids'){
+        kidsImage.src = '../images/kid.png'
+      }else{
+        kidsImage.src = '../images/calendario.png'
+      }
+    })
+  })
+
 
   const swiper2 = new Swiper('.mySwiper', {
     // Optional parameters
@@ -36,10 +108,10 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 2,
     spaceBetween: 20,
     centeredSlides: false,
-    slideToClickedSlide:true,
+    slideToClickedSlide:false,
     breakpoints: {
       640: {
-        slidesPerView: 2,
+        slidesPerView: 2, 
         spaceBetween: 20,
       },
       768: {
@@ -65,11 +137,31 @@ const swiper = new Swiper('.swiper', {
   
   });
 
-//funções responsaveis por mudar o background do topo
-
-
-
-
-
-
-//funções responsaveis por mudar o background do calendário
+  const swiper4 = new Swiper('.swiper3', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    freeMode: true,
+    preventInteractionOnTransition:true,
+    centeredSlides:false,
+    slideToClickedSlide:true,
+    setWrapperSize:true,
+    breakpoints: {
+      640: {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView:'auto',
+        spaceBetween: 0,
+      },
+      1200: {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+      },
+    },
+  
+  });
+ 

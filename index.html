@@ -49,9 +49,9 @@
                 </div>
                 <div class="col-md-9 mt-3 hero__content">
                     <h3>Inscrições abertas</h3>
-                    <h2>Torneio X</h2>
+                    <h2 data-torneio>Torneio X</h2>
                     <p>Clube Y  - 500 pontos
-                        14/05 a 29/05</p>
+                        <b data-date>14/05 a 29/05</b></p>
                     <a class="custom-btn" href="#">Inscreva-se até 30/04</a>
                 </div>
             </section>
@@ -64,43 +64,48 @@
             </div>
             
             <!-- Slider main container -->
-            <div class="swiper">
+            <div thumbsSlider="" class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <img class="img-fluid" src="images/slide-1.png" alt="" />
-                    <h4 class="foward"><b>Torneio X</b>
-                        14/05 a 30/05</h4>
+                    <h4 class="foward">Torneio X
+                        </h4>
+                    <h5 class="foward">14/05 a 30/05</h5>    
                 </div>
 
                  <!-- Slides -->
                  <div class="swiper-slide">
                     <img class="img-fluid" src="images/slide-2.png" alt="" />
-                    <h4 class="foward"><b>Torneio Beach A</b>   
-                        14/05 a 30/05</h4>
+                    <h4 class="foward">Torneio Beach A
+                    </h4>
+                <h5 class="foward">15/05 a 30/05</h5>  
                  </div>
 
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <img class="img-fluid" src="images/slide-3.png" alt="" />
-                    <h4 class="foward"><b>Torneio Kids B</b>   
-                        14/05 a 30/05</h4>
+                    <h4 class="foward">Torneio Kids B
+                    </h4>
+                <h5 class="foward">16/05 a 30/05</h5>  
                  </div>
 
                  
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <img class="img-fluid" src="images/slide-4.png" alt="" />
-                    <h4 class="foward"><b>Torneio Z</b>   
-                        14/05 a 30/05</h4>
+                    <h4 class="foward">Torneio Z
+                    </h4>
+                <h5 class="foward">17/05 a 30/05</h5>  
                  </div>
 
                  <!-- Slides -->
                  <div class="swiper-slide">
                     <img class="img-fluid" src="images/slide-5.png" alt="" />
-                    <h4 class="foward"><b>Saibro II 2022</b>   
-                        14/05 a 30/05</h4>
+                    <h4 class="foward">Saibro II 2022
+                    </h4>
+                <h5 class="foward">18/05 a 30/05</h5>  
                  </div>
 
          
@@ -115,8 +120,45 @@
             </div>
 
         </div> 
-        <img class="header__img" src="images/bg-hero.png" alt="fundo"/>
-
+        
+        <!-- <img data-background class="header__img" src="images/bg-hero.png" alt="fundo"/> -->
+        <div class="header__img">
+            <div class="mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/bg-hero.png" />
+                  </div>
+                </div>
+              </div>
+        </div>
+      
     </header>
 
     <section class="patrocinadores">
@@ -150,13 +192,13 @@
         <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tênis</button>
+                  <button data-kid-tab class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tênis</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Beach Tennis</button>
+                  <button data-kid-tab class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Beach Tennis</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Kids</button>
+                  <button data-kid-tab class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Kids</button>
                 </li>
               </ul>
               <h3 class="d-md-none d-block custom-title">Calendário/22</h3>
@@ -281,8 +323,1045 @@
               </div>
         </div>
 
-            <img class="calendario__img d-xl-block d-none" src="images/calendario.png" alt="pessoa jogando" />      
+            <img data-kid class="calendario__img d-xl-block d-none" src="images/calendario.png" alt="pessoa jogando" />      
     </section>
+
+    <section class="tabelas">
+            <img class="d-xl-block d-none img" src="images/tabelas.png" alt="homem jogando tênis" />
+        <div class="container">
+            <div class="row flex-xl-nowrap">
+                <div class="col-xl-3">
+                   
+                </div>
+
+                <div class="col-xl-9">
+                    <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="tenis-tab" data-bs-toggle="tab" data-bs-target="#tenis" type="button" role="tab" aria-controls="tenis" aria-selected="true">Tênis</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="beach-tenis-tab" data-bs-toggle="tab" data-bs-target="#beach-tenis" type="button" role="tab" aria-controls="beach-tenis" aria-selected="false">Beach Tennis</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kids" type="button" role="tab" aria-controls="kids" aria-selected="false">Kids</button>
+                        </li>
+                      </ul>
+                      <h2 class="d-flex align-items-center gap-3">Ranking <span>Circuito de Tênis</span></h2>
+                 
+                    <div class="line"></div>
+
+                      <section class="tabelas__tabs">
+
+                        <div class="tab-content" id="myTabContent">
+
+                            <div class="tab-pane fade show active" id="tenis" role="tabpanel" aria-labelledby="tenis-tab">                                    
+                           
+                                   <!-- Slider main container -->
+                            <div class="swiper3">
+                                <!-- Additional required wrapper -->
+                           
+                                    <ul class="nav nav-tabs swiper-wrapper" id="myTab2" role="tablist">
+                                        <!-- Slides -->
+            
+                                     
+                                            <li class="nav-item swiper-slide" role="presentation">
+                                                <button class="nav-link active nav-links" id="A-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#A" type="button" role="tab" aria-controls="A"
+                                                    aria-selected="true">Duplas Masculina A</button>
+                                            </li><!--nav-tab-->
+                                 
+            
+                                     
+                                            <li class="nav-item swiper-slide ms-2" role="presentation">
+                                                <button class="nav-link nav-links" id="B-tab" data-bs-toggle="tab" data-bs-target="#B"
+                                                    type="button" role="tab" aria-controls="B"
+                                                    aria-selected="false">Duplas Masculina B</button>
+                                            </li><!--nav-tab-->
+                                     
+            
+                                   
+                                            <li class="nav-item swiper-slide ms-2" role="presentation">
+                                                <button class="nav-link nav-links" id="C-tab" data-bs-toggle="tab" data-bs-target="#C"
+                                                    type="button" role="tab" aria-controls="C"
+                                                    aria-selected="false">Duplas Masculina C</button>
+                                            </li><!--nav-tab-->
+                                 
+            
+                                
+                                            <li class="nav-item swiper-slide ms-2" role="presentation">
+                                                <button class="nav-link nav-links" id="D-tab" data-bs-toggle="tab" data-bs-target="#D"
+                                                    type="button" role="tab" aria-controls="D"
+                                                    aria-selected="false">Duplas Masculina D</button>
+                                            </li><!--nav-tab-->
+    
+                              
+            
+                                        </ul><!--swiper-wrapepr-->
+                            
+                               
+    
+                            </div><!--swiper-->
+                            <div class="tab-content mt-3" id="myTabContent">
+
+                                <div class="tab-pane fade show active" id="A" role="tabpanel" aria-labelledby="A-tab">
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">04</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">05</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">06</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                 
+                                </div><!--Duplas Masculina A tab-->
+    
+                                <div class="tab-pane fade" id="B" role="tabpanel" aria-labelledby="B-tab">
+                                   
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                 <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">04</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table-1">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                </div><!--Duplas Masculina B tab-->
+    
+                                <div class="tab-pane fade" id="C" role="tabpanel" aria-labelledby="C-tab">
+                                   
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">04</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">05</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">04</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">06</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                </div><!--Duplas Masculina C tab-->
+    
+                                <div class="tab-pane fade" id="D" role="tabpanel" aria-labelledby="D-tab">
+                                   
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+    
+                                </div><!--Duplas Masculina D tab-->
+                            </div>
+                            </div><!--tenis tab-->
+                                
+                      
+                            <div class="tab-pane fade" id="beach-tenis" role="tabpanel" aria-labelledby="beach-tenis-tab">
+
+                            <!-- Slider main container -->
+                            <div class="swiper3">
+                                <!-- Additional required wrapper -->
+                           
+                                    <ul class="nav nav-tabs swiper-wrapper" id="myTabContent" role="tablist">
+                                        <!-- Slides -->
+            
+                                     
+                                            <li class="nav-item swiper-slide" role="presentation">
+                                                <button class="nav-link active nav-links" id="E-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#E" type="button" role="tab" aria-controls="E"
+                                                    aria-selected="true">Duplas Masculina A</button>
+                                            </li><!--nav-tab-->
+                                 
+            
+                                     
+                                            <li class="nav-item swiper-slide ms-2" role="presentation">
+                                                <button class="nav-link nav-links" id="F-tab" data-bs-toggle="tab" data-bs-target="#F"
+                                                    type="button" role="tab" aria-controls="F"
+                                                    aria-selected="false">Duplas Masculina B</button>
+                                            </li><!--nav-tab-->
+                                     
+            
+                                   
+                                            <li class="nav-item swiper-slide ms-2" role="presentation">
+                                                <button class="nav-link nav-links" id="G-tab" data-bs-toggle="tab" data-bs-target="#G"
+                                                    type="button" role="tab" aria-controls="G"
+                                                    aria-selected="false">Duplas Masculina C</button>
+                                            </li><!--nav-tab-->
+                                 
+            
+                                
+                                            <li class="nav-item swiper-slide ms-2" role="presentation">
+                                                <button class="nav-link nav-links" id="H-tab" data-bs-toggle="tab" data-bs-target="#H"
+                                                    type="button" role="tab" aria-controls="H"
+                                                    aria-selected="false">Duplas Masculina D</button>
+                                            </li><!--nav-tab-->
+    
+                                            
+                                            <li class="nav-item swiper-slide ms-2" role="presentation">
+                                                <button class="nav-link nav-links" id="I-tab" data-bs-toggle="tab" data-bs-target="#I"
+                                                    type="button" role="tab" aria-controls="H"
+                                                    aria-selected="false">Duplas Masculina E</button>
+                                            </li><!--nav-tab-->
+                              
+            
+                                        </ul><!--wrape__singlepr-->
+                            
+                               
+    
+                            </div><!--swiper-->
+                            <div class="tab-content mt-3" id="myTabContent">
+
+                                <div class="tab-pane fade show active" id="E" role="tabpanel" aria-labelledby="E-tab">
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">04</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">05</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">06</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                 
+                                </div><!--Duplas Masculina A tab-->
+    
+                                <div class="tab-pane fade" id="F" role="tabpanel" aria-labelledby="F-tab">
+                                   
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                 <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">04</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table-1">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                </div><!--Duplas Masculina B tab-->
+    
+                                <div class="tab-pane fade" id="G" role="tabpanel" aria-labelledby="G-tab">
+                                   
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">04</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">05</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">04</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">06</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                </div><!--Duplas Masculina C tab-->
+    
+                                <div class="tab-pane fade" id="H" role="tabpanel" aria-labelledby="H-tab">
+                                   
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+    
+                                </div><!--Duplas Masculina D tab-->
+
+                                <div class="tab-pane fade" id="I" role="tabpanel" aria-labelledby="I-tab">
+                                   
+                                    <div class="row  row-line">
+                                        <div class="col-2">
+                                           <h6>Posição</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <h6>Nome</h6>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <h6>Pontuação</h6>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <hr>
+    
+                                    <div class="row row-line  bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">01</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+
+                                    <div class="row row-line bg-table">
+                                        <div class="col-2">
+                                            <span class="info-table-1">03</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5">
+                                            <span class="info-table">Nome do jogador</span>
+                                        </div><!--col-3-->
+    
+                                        <div class="col-5 d-flex justify-content-end">
+                                            <span class="info-table">4950</span>
+                                        </div><!--col-3-->
+                                    </div><!--row-->
+    
+    
+                                </div><!--Duplas Masculina D tab-->
+                            </div>
+                                
+                            </div>
+    
+                            <div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab">
+                                <div class="empty d-flex justify-content-center align-items-center flex-column">
+                                    <img src="images/empty.png" alt="icone de vazio" />
+                                    <h6>Não existem torneios disponíveis</h6>
+                                </div>
+                                
+                            </div>
+                          </div>
+                     
+                      </section>
+                      <div class="pagination d-flex justify-content-center">
+                        <div class="pagination__content d-flex gap-3">
+                            <a href="#" class="disabled d-flex align-items-center justify-content-center">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.22 6.71997C0.0793075 6.57946 0.000175052 6.38882 0 6.18997V5.80997C0.00230401 5.61156 0.081116 5.4217 0.22 5.27997L5.36 0.149974C5.45388 0.055318 5.58168 0.0020752 5.715 0.0020752C5.84832 0.0020752 5.97612 0.055318 6.07 0.149974L6.78 0.859974C6.87406 0.952138 6.92707 1.07828 6.92707 1.20997C6.92707 1.34166 6.87406 1.46781 6.78 1.55997L2.33 5.99997L6.78 10.44C6.87466 10.5339 6.9279 10.6617 6.9279 10.795C6.9279 10.9283 6.87466 11.0561 6.78 11.15L6.07 11.85C5.97612 11.9446 5.84832 11.9979 5.715 11.9979C5.58168 11.9979 5.45388 11.9446 5.36 11.85L0.22 6.71997Z" fill="#E0E3FE"/>
+                                </svg>    
+                            </a>
+        
+                            <a href="#" class="d-flex align-items-center justify-content-center pagination-active">
+                               1
+                            </a>
+        
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                2
+                             </a>
+        
+                             <a href="#" class="d-flex align-items-center justify-content-center">
+                                3
+                             </a>
+        
+                             <a href="#" class="d-flex align-items-center justify-content-center">
+                                4
+                             </a>
+        
+                             <a href="#" class="d-flex align-items-center justify-content-center">
+                                5
+                             </a>
+        
+                             <a href="#" class="d-flex align-items-center justify-content-center">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.78 6.71997C6.92069 6.57946 6.99982 6.38882 7 6.18997V5.80997C6.9977 5.61156 6.91888 5.4217 6.78 5.27997L1.64 0.149974C1.54612 0.055318 1.41832 0.0020752 1.285 0.0020752C1.15168 0.0020752 1.02388 0.055318 0.93 0.149974L0.22 0.859974C0.125936 0.952138 0.0729284 1.07828 0.0729284 1.20997C0.0729284 1.34166 0.125936 1.46781 0.22 1.55997L4.67 5.99997L0.22 10.44C0.125343 10.5339 0.0721006 10.6617 0.0721006 10.795C0.0721006 10.9283 0.125343 11.0561 0.22 11.15L0.93 11.85C1.02388 11.9446 1.15168 11.9979 1.285 11.9979C1.41832 11.9979 1.54612 11.9446 1.64 11.85L6.78 6.71997Z" fill="#E0E3FE"/>
+                                </svg>    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="regulamentos">
+        <div class="container">
+            <div class="regulamento__box">
+                <h2>Regulamento</h2>
+                <p>1. Marcação de jogos e definição da rodada:</p>
+                <p>1.1. Os confrontos serão definidos pelas seguintes regras:</p>
+                <p>1.1.1   Nos rankings de classe sempre o jogador será sorteado aleatoriamente para jogar com qualquer tenista da sua classe. </p>
+                <p>1.1.2   Nos rankings de uma classe só, ou seja, ranking único, o jogador será sorteado aleatoriamente dentro da classe para jogar com qualquer um dos tenistas que estejam no máximo a 10 posições de diferença no ranking.</p>
+                <p>1.1.3.   Serão observadas as licenças, suspensões para formação dos confrontos dentro da classe.</p>
+                <p>1.1.4.   A formação da rodada será induzida pelo sistema de forma que a repetição de confrontos só aconteça depois de 03(três) rodadas.</p>
+                <p>1.1.5   Se houver número ímpar de participantes na classe, será acrescentado um jogador “CURINGA”, que servirá para termos um número par de jogadores.</p>
+                <p>1.1.5   Se houver número ímpar de participantes na classe, será acrescentado um jogador “CURINGA”, que servirá para termos um número par de jogadores.</p>
+                <p>1.1.5   Se houver número ímpar de participantes na classe, será acrescentado um jogador “CURINGA”, que servirá para termos um número par de jogadores.</p>
+                <p>1.1.5   Se houver número ímpar de participantes na classe, será acrescentado um jogador “CURINGA”, que servirá para termos um número par de jogadores.</p>
+                <p>1.1.5   Se houver número ímpar de participantes na classe, será acrescentado um jogador “CURINGA”, que servirá para termos um número par de jogadores.</p>
+                <p>1.1.5   Se houver número ímpar de participantes na classe, será acrescentado um jogador “CURINGA”, que servirá para termos um número par de jogadores.</p>
+                <p>1.1.5   Se houver número ímpar de participantes na classe, será acrescentado um jogador “CURINGA”, que servirá para termos um número par de jogadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-5 mt-3">
+                    <h2>Entre em contato</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis, nibh id rhoncus tincidunt, urna diam rhoncus lorem, at semper.</p>
+                
+                <div class="d-flex align-items-center gap-2 contato__icons">
+                    <div class=""><img src="images/telefone.png" alt="icone" /></div>
+                    <span>+71 555 5050</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 contato__icons mt-3">
+                    <div class=""><img src="images/email.png" alt="icone" /></div>
+                    <span>contato@federecao.com.br</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 contato__icons  mt-3">
+                    <div class=""><img src="images/facebook.png" alt="icone" /></div>
+                    <h6>@federeção</h6>
+                </div>
+                <div class="d-flex align-items-center gap-2 contato__icons  mt-3">
+                    <div class=""><img src="images/instagram.png" alt="icone" /></div>
+                    <h6>Facebook.com/Federacao</h6>
+                </div>
+                </div>
+
+                <div class="col-md-5 mt-3">
+                    <h2>Filie-se</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis, nibh id rhoncus tincidunt, urna diam rhoncus lorem, at semper.</p>
+                
+                <h5 class="mt-3">1 - at semper quam felis a magna.</h5>
+                <h5 class="mt-3">2 - Semper quam felis a magna.</h5>
+                <h5 class="mt-3">3 - Quam felis a magna.</h5>
+               
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="container d-flex justify-content-center flex-column align-items-center">
+                <img class="img-fluid" src="images/footer.jpg" alt="logo" />
+
+                <div class="line"></div>
+
+                <p>© 2022 Desenvolvido por RDT Soluções Tecnológicas
+                    Todos Direitos Reservados</p>
+            </div>
+        </div>
+    </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
