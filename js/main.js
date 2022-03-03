@@ -3,6 +3,10 @@
     spaceBetween: 10,
     watchSlidesProgress: true,
     effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
+    loop: true,
   });
 
 
