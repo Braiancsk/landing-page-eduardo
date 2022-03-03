@@ -23,11 +23,11 @@ const swiper = new Swiper('.swiper', {
       },
       768: {
         slidesPerView: "auto",
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       1024: {
         slidesPerView: "auto",
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
     },
     // Navigation arrows

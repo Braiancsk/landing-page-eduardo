@@ -7,6 +7,61 @@
     --bg-primary:#302E93;
 }
 
+.menu{
+    position:fixed;
+    left:0;
+    top:0;
+    width:50%;
+    height:100vh;
+    background-color:#000016e1;
+    /* border-radius:0 10px 10px 0; */
+    z-index: -999;
+    transform: translateX(-200%);
+    transition:0.2s ease-in-out;
+}
+
+
+.menu-active{
+    z-index: 999;
+    transform: translateX(0);
+}
+
+.hamburger-box{
+    z-index: 99999999;
+}
+
+.hamburger-inner{
+    background:white;
+}
+
+.menu ul{
+    max-width:300px;
+    width: 100%;
+}
+
+.menu .menu__btn{
+    width: 80%;
+    display:block;
+    background-color:white;
+    border-radius: 4px;
+    color:#302E93;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu li{
+    list-style-type: none;
+
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
 header.header{
     background: #212224;
     border-radius: 0px 0px 0px 200px;
