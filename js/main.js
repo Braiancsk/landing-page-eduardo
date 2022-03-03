@@ -14,10 +14,10 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    loopedSlides:5,
     slidesPerView: "auto",
     spaceBetween: 20,
     centeredSlides: false,
-
     slideToClickedSlide:true,
 
     breakpoints: {
