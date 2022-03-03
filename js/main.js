@@ -96,13 +96,41 @@ const swiper = new Swiper('.swiper', {
   let kidsImage = document.querySelector('[data-kid]')
   kidTab.forEach(tab =>{
     tab.addEventListener('click',()=>{
-      if(tab.innerText == 'Kids'){
-        kidsImage.src = '../images/kid.png'
-      }else{
-        kidsImage.src = '../images/calendario.png'
+      switch (tab.innerText) {
+        case 'Tênis':
+          kidsImage.src = '../images/calendario.png'
+          break;
+        case 'Kids':
+          kidsImage.src = '../images/kid.png'
+          break;
+        case 'Beach Tennis':
+          kidsImage.src = '../images/kid.png'
+          break;
+        default:
+          break;
       }
     })
   })
+
+  let tabelasTab = document.querySelectorAll('[data-tabelas]')
+  tabelasTab.forEach(tab =>{
+    tab.addEventListener('click',()=>{
+      switch (tab.innerText) {
+        case 'Tênis':
+          console.log('tênis')
+          break;
+        case 'Beach Tennis':
+          console.log('beach tennis')
+          break;
+        case 'Kids':
+          console.log('kids')
+          break;
+        default:
+          break;
+      }
+    })
+  })
+
 
 
   const swiper2 = new Swiper('.mySwiper', {

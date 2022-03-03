@@ -410,9 +410,13 @@ section.calendario{
 section.calendario .container{
     position: relative;
     z-index: 9;
+    padding: 0 60px;
+    min-height: 468px;
 }
 section.calendario .tab-content{
     min-height:366px;
+    max-width: 600px;
+    width: 100%;
 }
 section.calendario .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
     padding: 60px 7px 15px 7px!important;
@@ -477,17 +481,10 @@ section.calendario .line{
     border:0;
 }
 
-.calendario__content:last-child{
-    padding-bottom: 50px!important;
-}
-
 .calendario__forma{
     position: relative;
 }
 
-section.calendario .tab-pane{
-    max-width:751px;
-}
 .empty{
     padding-top:80px;
 }
@@ -558,7 +555,7 @@ section.calendario .tab-pane{
     background-color:#ee3737;
 }
 .calendario__img{
-    min-height:100%;
+    min-height:548px;
     object-fit: cover;
     max-width:50%;
     width: 100%;
@@ -901,6 +898,9 @@ footer p{
 
     .mySwiper2 img{
         border-radius: 0px 0px 0px 200px;
+    }
+    section.calendario .container{
+        padding:0 20px;
     }
 }
 
