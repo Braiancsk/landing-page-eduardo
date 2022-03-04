@@ -14,26 +14,10 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    loopedSlides:5,
     slidesPerView: "auto",
     spaceBetween: 20,
-    centeredSlides: false,
     slideToClickedSlide:true,
 
-    breakpoints: {
-      640: {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-      },
-    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -45,6 +29,10 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
+  
+  swiper.on('loopFix',()=>{
+    console.log('final')
+  })
 //funções responsaveis por mudar o background do topo
   let torneio = document.querySelector('[data-torneio]')
   let data = document.querySelector('[data-date]')
@@ -87,10 +75,6 @@ const swiper = new Swiper('.swiper', {
   })
 
   //funções responsaveis por mudar o background do calendário
-  
-  const handleTab = (e) =>{
-    console.dir(e)
-  }
 
   let kidTab = document.querySelectorAll('[data-kid-tab]')
   let kidsImage = document.querySelector('[data-kid]')
@@ -104,7 +88,7 @@ const swiper = new Swiper('.swiper', {
           kidsImage.src = '../images/kid.png'
           break;
         case 'Beach Tennis':
-          kidsImage.src = '../images/kid.png'
+          kidsImage.src = '../images/calendario-beach.png'
           break;
         default:
           break;
@@ -113,17 +97,18 @@ const swiper = new Swiper('.swiper', {
   })
 
   let tabelasTab = document.querySelectorAll('[data-tabelas]')
+  let tabelasImage = document.querySelector('[data-ranking]')
   tabelasTab.forEach(tab =>{
     tab.addEventListener('click',()=>{
       switch (tab.innerText) {
         case 'Tênis':
-          console.log('tênis')
+          tabelasImage.src = '../images/ranking-tenis.jpg'
           break;
         case 'Beach Tennis':
-          console.log('beach tennis')
+          tabelasImage.src = '../images/ranking-beach.jpg'
           break;
         case 'Kids':
-          console.log('kids')
+          tabelasImage.src = '../images/ranking-kids.jpg'
           break;
         default:
           break;

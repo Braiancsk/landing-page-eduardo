@@ -268,26 +268,31 @@ header.header h3{
 
 .header__slide .swiper-slide img{
     border-radius: 10px;
-    max-width:203px;
+    max-width:300px; /*caso tenha apenas 3 slides*/
+    /*max-width:203px; /*caso tenha apenas 5 slides*/
+    width: 100%;
     width: 100%;
     height:138px;
     object-fit: cover;
 }
 .header__slide .swiper-slide{
-    max-width:203px;
+    max-width:300px; /*caso tenha apenas 3 slides*/
+      /*max-width:203px; /*caso tenha 5 slides*/
     height:138px;
     width: 100%;
 }
 
 .header__slide .swiper-slide-active{
-    max-width:203px;
+    max-width:300px; /*caso tenha apenas 3 slides*/
+      /*max-width:203px; /*caso tenha 5 slides*/
     height:173px;
     width: 100%;
 }
 .header__slide .swiper-slide-active img{
     position: relative;
     height:173px;
-    max-width:203px;
+    max-width:300px; /*caso tenha apenas 3 slides*/
+      /*max-width:203px; /*caso tenha 5 slides*/
     width: 100%;
     transition:0.3s ease-in;
 }
@@ -410,13 +415,16 @@ section.calendario{
 section.calendario .container{
     position: relative;
     z-index: 9;
-    padding: 0 60px;
+    padding: 0 20px;
     min-height: 468px;
 }
 section.calendario .tab-content{
     min-height:366px;
     max-width: 600px;
     width: 100%;
+}
+section.calendario .tab-pane{
+    min-height:452px;
 }
 section.calendario .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
     padding: 60px 7px 15px 7px!important;
@@ -439,12 +447,19 @@ section.calendario h2{
     transform: rotate(-90deg);
     color:#C7C7C7;
     position: absolute;
-    left:0;
+    left:3%;
     bottom:0;
     top:0;
     z-index: 0;
 }
-
+.calendario__box{
+    max-width: 290px;
+    min-height: 420px;
+    width: 100%;
+}
+.calendario__content img{
+    height:max-content;
+}
 .custom-title{
     padding:20px 0;
     font-family: 'Poppins', sans-serif;
@@ -555,15 +570,16 @@ section.calendario .line{
     background-color:#ee3737;
 }
 .calendario__img{
-    min-height:548px;
+    min-height:100%;
     object-fit: cover;
     max-width:50%;
     width: 100%;
     position:absolute;
-    right: -100px;
+    right: 0;
     top:0;
     border-radius: 0px 150px 0px 0px;
     z-index: 9;
+    padding: 0 0 0 4%;
 }
 
 .tabelas__tabs{
@@ -778,7 +794,7 @@ section.tabelas .img{
 }
 
 section.tabelas .empty{
-    padding:80px 0;
+    padding:240px 0;
 }
 
 section.regulamentos{
@@ -899,8 +915,8 @@ footer p{
     .mySwiper2 img{
         border-radius: 0px 0px 0px 200px;
     }
-    section.calendario .container{
-        padding:0 20px;
+    .calendario__box{
+        min-height:auto;
     }
 }
 
