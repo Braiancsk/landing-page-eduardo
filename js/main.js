@@ -31,7 +31,7 @@ const swiper = new Swiper('.swiper', {
     },
     // on:{
     //   click: function(e){
-    //     console.log(e.target)
+    //     e.slideNext(200, true)
     //   }
     // }
   });
