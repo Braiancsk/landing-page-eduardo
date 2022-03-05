@@ -6,33 +6,34 @@
     fadeEffect: {
       crossFade: true
     },
-    loop: true,
+    loop: false,
   });
 
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     slidesPerView: "auto",
     spaceBetween: 20,
     slideToClickedSlide:true,
-
-    // Navigation arrows
+    // loopAdditionalSlides:20,
+    // autoplay:true,
+    // loopedSlides:20,
+    // initialSlide:0,
+    // centeredSlides:true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-
     },
     thumbs: {
       swiper: gallery,
     },
   });
 
-  
-  swiper.on('loopFix',()=>{
-    console.log('final')
-  })
+
+
+
 //funções responsaveis por mudar o background do topo
   let torneio = document.querySelector('[data-torneio]')
   let data = document.querySelector('[data-date]')

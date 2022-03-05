@@ -268,31 +268,30 @@ header.header h3{
 
 .header__slide .swiper-slide img{
     border-radius: 10px;
-    max-width:300px; /*caso tenha apenas 3 slides*/
-    /*max-width:203px; /*caso tenha apenas 5 slides*/
-    width: 100%;
+     /*max-width:300px; caso tenha apenas 3 slides*/
+    max-width:203px; /*caso tenha apenas 5 slides*/
     width: 100%;
     height:138px;
     object-fit: cover;
 }
 .header__slide .swiper-slide{
-    max-width:300px; /*caso tenha apenas 3 slides*/
-      /*max-width:203px; /*caso tenha 5 slides*/
+     /*max-width:300px; caso tenha apenas 3 slides*/
+    max-width:203px; /*caso tenha 5 slides*/
     height:138px;
     width: 100%;
 }
 
 .header__slide .swiper-slide-active{
-    max-width:300px; /*caso tenha apenas 3 slides*/
-      /*max-width:203px; /*caso tenha 5 slides*/
+     /*max-width:300px; caso tenha apenas 3 slides*/
+    max-width:203px; /*caso tenha 5 slides*/
     height:173px;
     width: 100%;
 }
 .header__slide .swiper-slide-active img{
     position: relative;
     height:173px;
-    max-width:300px; /*caso tenha apenas 3 slides*/
-      /*max-width:203px; /*caso tenha 5 slides*/
+     /*max-width:300px; caso tenha apenas 3 slides*/
+    max-width:203px; /*caso tenha 5 slides*/
     width: 100%;
     transition:0.3s ease-in;
 }
