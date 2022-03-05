@@ -13,7 +13,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     slidesPerView: "auto",
     spaceBetween: 20,
     slideToClickedSlide:true,
@@ -29,6 +29,11 @@ const swiper = new Swiper('.swiper', {
     thumbs: {
       swiper: gallery,
     },
+    // on:{
+    //   click: function(e){
+    //     console.log(e.target)
+    //   }
+    // }
   });
 
 
