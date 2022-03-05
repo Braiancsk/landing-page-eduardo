@@ -17,9 +17,9 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: "auto",
     spaceBetween: 20,
     slideToClickedSlide:true,
-    // loopAdditionalSlides:20,
+    // loopAdditionalSlides:4,
     // autoplay:true,
-    // loopedSlides:20,
+    // loopedSlides:4,
     // initialSlide:0,
     // centeredSlides:true,
     navigation: {
@@ -36,7 +36,9 @@ const swiper = new Swiper('.swiper', {
     // }
   });
 
-
+  swiper.on('init',()=>{
+    console.log('iniciado')
+  })
 
 
 //funções responsaveis por mudar o background do topo
