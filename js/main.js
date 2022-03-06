@@ -1,4 +1,49 @@
 
+  //funções responsaveis por mudar o background do calendário
+
+  let kidTab = document.querySelectorAll('[data-kid-tab]')
+  let kidsImage = document.querySelector('[data-kid]')
+  kidTab.forEach(tab =>{
+    tab.addEventListener('click',()=>{
+      switch (tab.innerText) {
+        case 'Tênis':
+          kidsImage.src = '../images/calendario.png'
+          break;
+        case 'Kids':
+          kidsImage.src = '../images/kid.png'
+          break;
+        case 'Beach Tennis':
+          kidsImage.src = '../images/calendario-beach.png'
+          break;
+        default:
+          break;
+      }
+    })
+  })
+
+  let tabelasTab = document.querySelectorAll('[data-tabelas]')
+  let tabelasImage = document.querySelector('[data-ranking]')
+  tabelasTab.forEach(tab =>{
+    tab.addEventListener('click',()=>{
+      switch (tab.innerText) {
+        case 'Tênis':
+          tabelasImage.src = '../images/ranking-tenis.jpg'
+          break;
+        case 'Beach Tennis':
+          tabelasImage.src = '../images/ranking-beach.jpg'
+          break;
+        case 'Kids':
+          tabelasImage.src = '../images/ranking-kids.jpg'
+          break;
+        default:
+          break;
+      }
+    })
+  })
+
+  
+  
+  
   const gallery = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     watchSlidesProgress: true,
@@ -80,48 +125,6 @@ const swiper = new Swiper('.swiper', {
       data.textContent = slideActiveRepater.children[2].innerText
     }
 
-  })
-
-  //funções responsaveis por mudar o background do calendário
-
-  let kidTab = document.querySelectorAll('[data-kid-tab]')
-  let kidsImage = document.querySelector('[data-kid]')
-  kidTab.forEach(tab =>{
-    tab.addEventListener('click',()=>{
-      switch (tab.innerText) {
-        case 'Tênis':
-          kidsImage.src = '../images/calendario.png'
-          break;
-        case 'Kids':
-          kidsImage.src = '../images/kid.png'
-          break;
-        case 'Beach Tennis':
-          kidsImage.src = '../images/calendario-beach.png'
-          break;
-        default:
-          break;
-      }
-    })
-  })
-
-  let tabelasTab = document.querySelectorAll('[data-tabelas]')
-  let tabelasImage = document.querySelector('[data-ranking]')
-  tabelasTab.forEach(tab =>{
-    tab.addEventListener('click',()=>{
-      switch (tab.innerText) {
-        case 'Tênis':
-          tabelasImage.src = '../images/ranking-tenis.jpg'
-          break;
-        case 'Beach Tennis':
-          tabelasImage.src = '../images/ranking-beach.jpg'
-          break;
-        case 'Kids':
-          tabelasImage.src = '../images/ranking-kids.jpg'
-          break;
-        default:
-          break;
-      }
-    })
   })
 
 
